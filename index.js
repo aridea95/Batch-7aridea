@@ -4,12 +4,14 @@ function warnTheSheep(queue) {
 
     for (let i = queue.length-1; i >= 0; i--){
         counter++
-        let messages
+
         if(queue[queue.length-1] === "wolf"){
-            messages = "Pls go away and stop eating my sheep"
+            let goAway = "Pls go away and stop eating my sheep"
+            return goAway
         }else if(queue[i] === "wolf"){
-            messages = `Oi! Sheep number ${counter -1}! You are about to be eaten by a wolf!`
-        } return messages 
+            let warning = `Oi! Sheep number ${counter -1}! You are about to be eaten by a wolf!`
+            return warning
+        }
     }  
 }
 
